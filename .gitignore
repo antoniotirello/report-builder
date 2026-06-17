@@ -1,25 +1,42 @@
-# CakePHP 3
+# ─── Laravel ─────────────────────────────────────────────────────────────────
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/app/public/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
 
-/vendor/*
-/config/app.php
+# ─── Environment ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# ─── Build / assets ──────────────────────────────────────────────────────────
+/public/build/
+/public/css/
+/public/js/
 
-/logs/*
-!/logs/empty
+# ─── Testing ─────────────────────────────────────────────────────────────────
+.phpunit.result.cache
+coverage/
+*.coverage
 
-# CakePHP 2
+# ─── Docker (opzionale: tieni i file docker in repo, escludi solo i volumi) ──
+docker/mysql/data/
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+# ─── IDE / OS ─────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── OpenAPI (se generato, non va in repo) ───────────────────────────────────
+openapi.yaml
+/public/swagger/
+storage/api-docs/
